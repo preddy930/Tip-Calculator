@@ -7,6 +7,7 @@
 //
 
 #import "TipViewController.h"
+#import "SettingsViewController.h"
 
 @interface TipViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *billTextField;
@@ -15,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipPercentageLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 @property (weak, nonatomic) IBOutlet UISlider *tipSlider;
+
 - (IBAction)onTap:(id)sender;
 - (IBAction)updatedSegment:(id)sender;
 - (IBAction)updateSegmentedControl:(id)sender;
@@ -37,6 +39,40 @@
 {
     [super viewDidLoad];
     [self updateMarkers];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStylePlain target:self action:@selector(onSettingsButton)];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *stringValue = [defaults objectForKey:@"default_tip"];
+    
+    self.tipSlider.value = [stringValue floatValue]/100;
+    
+    [self updateSegments];
+    [self updateValues];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"view will appear");
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"view did appear");
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *stringValue = [defaults objectForKey:@"default_tip"];
+    
+    self.tipSlider.value = [stringValue floatValue]/100;
+    
+    [self updateSegments];
+    [self updateValues];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    NSLog(@"view will disappear");
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    NSLog(@"view did disappear");
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,7 +90,16 @@
     [self updateMarkers];
 }
 
+- (void)onSettingsButton {
+    [self.navigationController pushViewController:[[SettingsViewController alloc] init] animated:YES];
+}
+
 - (IBAction)updateSegmentedControl:(id)sender {
+    
+    [self updateSegments];
+}
+
+- (void) updateSegments {
     
     int segments = [self.tipControl numberOfSegments];
     

@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tip Calculator/TipViewController.m"
-            timestampString = "420767507.489988"
+            filePath = "Tip Calculator/SettingsViewController.m"
+            timestampString = "420790615.155918"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-doConfirm:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

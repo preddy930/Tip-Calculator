@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC721C151914704300C27489 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC721C131914704300C27489 /* SettingsViewController.m */; };
+		AC721C161914704300C27489 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC721C131914704300C27489 /* SettingsViewController.m */; };
+		AC721C171914704300C27489 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC721C141914704300C27489 /* SettingsViewController.xib */; };
+		AC721C181914704300C27489 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC721C141914704300C27489 /* SettingsViewController.xib */; };
 		ACD6082219144283001B159F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD6082119144283001B159F /* Foundation.framework */; };
 		ACD6082419144283001B159F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD6082319144283001B159F /* CoreGraphics.framework */; };
 		ACD6082619144283001B159F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD6082519144283001B159F /* UIKit.framework */; };
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC721C121914704300C27489 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		AC721C131914704300C27489 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		AC721C141914704300C27489 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		ACD6081E19144283001B159F /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD6082119144283001B159F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACD6082319144283001B159F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +119,9 @@
 		ACD6082719144283001B159F /* Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				AC721C121914704300C27489 /* SettingsViewController.h */,
+				AC721C131914704300C27489 /* SettingsViewController.m */,
+				AC721C141914704300C27489 /* SettingsViewController.xib */,
 				ACD6083019144283001B159F /* AppDelegate.h */,
 				ACD6083119144283001B159F /* AppDelegate.m */,
 				ACD6083319144284001B159F /* Images.xcassets */,
@@ -229,6 +239,7 @@
 				ACD6085419144465001B159F /* TipViewController.xib in Resources */,
 				ACD6082C19144283001B159F /* InfoPlist.strings in Resources */,
 				ACD6083419144284001B159F /* Images.xcassets in Resources */,
+				AC721C171914704300C27489 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD6084519144284001B159F /* InfoPlist.strings in Resources */,
+				AC721C181914704300C27489 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +262,7 @@
 				ACD6083219144283001B159F /* AppDelegate.m in Sources */,
 				ACD6085319144465001B159F /* TipViewController.m in Sources */,
 				ACD6082E19144283001B159F /* main.m in Sources */,
+				AC721C151914704300C27489 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD6084719144284001B159F /* Tip_CalculatorTests.m in Sources */,
+				AC721C161914704300C27489 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +462,7 @@
 				ACD6084C19144284001B159F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACD6084D19144284001B159F /* Build configuration list for PBXNativeTarget "Tip CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +471,7 @@
 				ACD6084F19144284001B159F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
